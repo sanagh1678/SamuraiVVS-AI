@@ -1,6 +1,6 @@
-# ClaritySum
+# SamuraiVVS-AI
 
-ClaritySum is a Chrome extension for producing faithful, compact summaries of long emails, support tickets, documents, and web pages.
+SamuraiVVS-AI is a Chrome extension for producing faithful, compact summaries of long emails, support tickets, documents, and web pages.
 
 ## What it does
 
