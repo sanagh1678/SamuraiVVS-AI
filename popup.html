@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClaritySum</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>ClaritySum</h1>
+        <p>Faithful summaries, less noise.</p>
+      </div>
+      <span id="statusDot" class="status-dot"></span>
+    </header>
+
+    <section class="controls">
+      <button id="pageButton" class="secondary">Use current page</button>
+      <button id="clearButton" class="secondary">Clear</button>
+    </section>
+
+    <label for="source">Source text</label>
+    <textarea id="source" placeholder="Paste an email, ticket, document, or select text on the current page."></textarea>
+
+    <div class="row">
+      <label for="length">Length</label>
+      <select id="length">
+        <option value="short">Short</option>
+        <option value="balanced" selected>Balanced</option>
+        <option value="detailed">Detailed</option>
+      </select>
+      <button id="summarizeButton" class="primary">Summarize</button>
+    </div>
+
+    <div id="message" class="message" role="status"></div>
+
+    <label for="summary">Summary</label>
+    <div id="summary" class="summary">Your summary will appear here.</div>
+
+    <div class="footer">
+      <span id="method"></span>
+      <button id="copyButton" class="text-button">Copy</button>
+    </div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

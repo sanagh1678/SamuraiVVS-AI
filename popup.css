@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 390px;
+  min-height: 520px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17202a;
+  background: #f7f8fa;
+}
+
+main {
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+header p {
+  margin: 3px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #9ca3af;
+}
+
+.status-dot.ok {
+  background: #16a34a;
+}
+
+.status-dot.error {
+  background: #dc2626;
+}
+
+.controls,
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 12px;
+}
+
+button,
+select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #9ca3af;
+}
+
+.primary {
+  border-color: #111827;
+  background: #111827;
+  color: white;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+.secondary {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+textarea {
+  width: 100%;
+  height: 155px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  background: white;
+}
+
+textarea:focus {
+  border-color: #6b7280;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.row label {
+  margin: 0;
+}
+
+.message {
+  min-height: 18px;
+  margin-top: 9px;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.message.error {
+  color: #b91c1c;
+}
+
+.summary {
+  min-height: 170px;
+  max-height: 300px;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+#method {
+  color: #9ca3af;
+  font-size: 10px;
+}
+
+.text-button {
+  border: 0;
+  padding: 4px;
+  background: transparent;
+  color: #374151;
+}

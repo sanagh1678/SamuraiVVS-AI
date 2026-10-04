@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ClaritySum",
+  "version": "1.0.0",
+  "description": "Faithful summaries for long emails, tickets, documents, and web pages.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*"
+  ],
+  "action": {
+    "default_title": "ClaritySum",
+    "default_popup": "popup.html"
+  }
+}
